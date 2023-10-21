@@ -58,7 +58,10 @@ export default function Form() {
     if (fullName && email && mobileNumber) {
       setButtonHandler({ disabled: true, text: "Hold on..." });
       axios
-        .post("/api/submit-form", { ...formData })
+        .post("/api/submit-form", {
+          ...formData,
+          mobileNumber: Number(formData.mobileNumber),
+        })
         .then((res) => setSuccessMsg(res.data.msg))
         .then(() => {
           setFormData({
@@ -72,7 +75,7 @@ export default function Form() {
           });
         })
         .catch((error) => {
-          console.log(error)
+          console.log(error);
           setButtonHandler({
             text: "Subscribe",
             disabled: false,

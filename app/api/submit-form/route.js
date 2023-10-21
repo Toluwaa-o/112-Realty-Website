@@ -25,7 +25,7 @@ export const POST = async (req) => {
       { status: 400 }
     );
 
-  const userWithNumber = await prisma.user.findOne({
+  const userWithNumber = await prisma.user.findFirst({
     where: { mobileNumber: Number(mobileNumber) },
   });
 
@@ -46,7 +46,7 @@ export const POST = async (req) => {
       NextResponse.json(
         {
           msg: "Something went wrong, please try again!",
-          error
+          error,
         },
         { status: 500 }
       );
