@@ -75,7 +75,6 @@ export default function Form() {
           });
         })
         .catch((error) => {
-          console.log(error);
           setButtonHandler({
             text: "Subscribe",
             disabled: false,

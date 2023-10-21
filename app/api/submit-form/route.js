@@ -5,7 +5,6 @@ const prisma = new PrismaClient();
 
 export const POST = async (req) => {
   const { fullName, email, mobileNumber } = await req.json();
-  console.log(fullName, email, mobileNumber);
 
   if (!fullName || !email || !mobileNumber)
     return NextResponse.json(
