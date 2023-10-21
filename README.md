@@ -1,5 +1,5 @@
 # 112 realty Website
 
-### Built with Next JS and Tailwind CSS
+### Built with Next JS, MongoDB and Tailwind CSS
 
-Design gotten from lucrerealty.com website
+Web page for 112 Realty
