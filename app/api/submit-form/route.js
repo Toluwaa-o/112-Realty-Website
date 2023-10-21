@@ -25,7 +25,9 @@ export const POST = async (req) => {
       { status: 400 }
     );
 
-  const userWithNumber = await prisma.user.findOne({ where: { mobileNumber } });
+  const userWithNumber = await prisma.user.findOne({
+    where: { mobileNumber: Number(mobileNumber) },
+  });
 
   if (userWithNumber)
     return NextResponse.json(
