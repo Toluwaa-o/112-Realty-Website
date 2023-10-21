@@ -5,7 +5,7 @@ const prisma = new PrismaClient();
 
 export const POST = async (req) => {
   const { fullName, email, mobileNumber } = await req.json();
-  console.log(fullName, email, mobileNumber)
+  console.log(fullName, email, mobileNumber);
 
   if (!fullName || !email || !mobileNumber)
     return NextResponse.json(
@@ -40,12 +40,14 @@ export const POST = async (req) => {
       data: { fullName, email, mobileNumber: Number(mobileNumber) },
     });
   } catch (error) {
-    return NextResponse.json(
-      {
-        msg: "Something went wrong, please try again!",
-      },
-      { status: 500 }
-    );
+    if (error) {
+      NextResponse.json(
+        {
+          msg: "Something went wrong, please try again!",
+        },
+        { status: 500 }
+      );
+    }
   }
 
   return NextResponse.json({
