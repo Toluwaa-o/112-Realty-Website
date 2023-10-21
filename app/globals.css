@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.slideShowBg {
+  background-color: #1e3540c7;
+  background-image: url('/images/334100-Real-estate-outlook-hero-1380x800px_.jpg');
+  background-size: 320% 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-blend-mode: luminosity;
+}
+
+.formBackground {
+  background-image: url('/images/contemporary-design-living-houses-modern-luxury-ap-PULDYE5.jpg');
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.custom_fadeIn {
+  animation: custom_fadeIn 2000ms linear;
+}
+
+@keyframes custom_fadeIn {
+  0% {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(-50vw);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateX(0vw);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .slideShowBg {
+    background-size: 100% 100%;
+    
+  }
+}
