@@ -38,7 +38,7 @@ export const POST = async (req) => {
     );
 
   try {
-    const data = await prisma.user.create({
+    await prisma.user.create({
       data: { fullName, email, mobileNumber: Number(mobileNumber) },
     });
   } catch (error) {
@@ -46,6 +46,7 @@ export const POST = async (req) => {
       NextResponse.json(
         {
           msg: "Something went wrong, please try again!",
+          error
         },
         { status: 500 }
       );
