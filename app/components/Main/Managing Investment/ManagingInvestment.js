@@ -23,7 +23,7 @@ export default function ManagingInvestment() {
         className={`${roboto_condensed.className} text-myBlue grid p-6 gap-6 min-h-[100vh] place-content-center md:min-h-fit md:self-start md:pt-[6em]`}
       >
         <h2 className="uppercase text-[2.6rem] m-auto w-[90%] font-light text-center leading-[3.1rem] md:text-left md:m-0 md:text-[3.5rem] md:leading-[3.7rem]">
-          Managing your investment as if they were out own
+          Managing your investment as if they were our own
         </h2>
 
         <p className="uppercase text-2xl font-light w-[75%] tracking-wide md:w-[85%]">
