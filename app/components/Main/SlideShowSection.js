@@ -33,31 +33,31 @@ export default function SlideShowSection() {
       <nav className="flex custom_fadeIn gap-4 p-3 m-auto z-20 mt-[3em]">
         <Link
           className="md:hover:scale-150 transition-all"
-          href="https://twitter.com/112realty.com"
+          href="https://twitter.com/112realty"
         >
           <BsTwitter size={27} />
         </Link>
         <Link
           className="md:hover:scale-150 transition-all"
-          href="https://youtube.com/@112realty.com"
+          href="https://youtube.com/@112realty"
         >
           <BsYoutube size={27} />
         </Link>
         <Link
           className="md:hover:scale-150 transition-all"
-          href="https://instagram.com/112realty.com"
+          href="https://instagram.com/112realty"
         >
           <BsInstagram size={27} />
         </Link>
         <Link
           className="md:hover:scale-150 transition-all"
-          href="https://facebook.com/112realty.com"
+          href="https://facebook.com/112realty"
         >
           <BsFacebook size={27} />
         </Link>
         <Link
           className="md:hover:scale-150 transition-all"
-          href="https://linkedin.com/112realty.com"
+          href="https://linkedin.com/112realty"
         >
           <BsLinkedin size={27} />
         </Link>
