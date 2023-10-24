@@ -24,7 +24,7 @@ export default function ListItemUnordered({ question, answer }) {
       className="grid gap-3 border-b border-gray-300 pb-4"
     >
       <h4
-        className={`${roboto_condensed.className} md:hover:text-[#039eab] transition-all`}
+        className={`${roboto_condensed.className} md:hover:text-hoverColor transition-all`}
         onClick={() => setShowDetails(!showDetails)}
         role="button"
       >

@@ -104,7 +104,7 @@ export default function Form() {
   return (
     <span
       data-aos="fade-left"
-      className="bg-white text-myBlue p-6 gap-4 grid rounded-lg col-start-2"
+      className="bg-[#F7FAFD] text-myBlue p-6 gap-4 grid rounded-lg col-start-2"
     >
       <h3
         className={`${roboto_condensed.className} text-center text-3xl uppercase md:w-[70%] md:m-auto`}
@@ -125,7 +125,7 @@ export default function Form() {
           aria-label="Full Name"
           value={formData.fullName}
           onChange={updateFormData}
-          className="p-3 font-serif placeholder:font-extralight border border-gray-300 outline-none rounded-md md:hover:border-[#039eab] md:hover:placeholder:text-[#039eab] transition-all"
+          className="p-3 font-serif placeholder:font-extralight border border-gray-300 outline-none rounded-md md:hover:border-hoverColor md:hover:placeholder:text-hoverColor transition-all"
         />
         <input
           name="email"
@@ -134,7 +134,7 @@ export default function Form() {
           aria-label="Email"
           value={formData.email}
           onChange={updateFormData}
-          className="p-3 font-serif placeholder:font-extralight border-gray-300 outline-none border rounded-md md:hover:border-[#039eab] md:hover:placeholder:text-[#039eab] transition-all"
+          className="p-3 font-serif placeholder:font-extralight border-gray-300 outline-none border rounded-md md:hover:border-hoverColor md:hover:placeholder:text-hoverColor transition-all"
         />
         <input
           name="mobileNumber"
@@ -142,7 +142,7 @@ export default function Form() {
           placeholder="Mobile Number"
           value={formData.mobileNumber}
           onChange={updateFormData}
-          className="p-3 font-serif placeholder:font-extralight border-gray-300 outline-none border rounded-md md:hover:border-[#039eab] md:hover:placeholder:text-[#039eab] transition-all"
+          className="p-3 font-serif placeholder:font-extralight border-gray-300 outline-none border rounded-md md:hover:border-hoverColor md:hover:placeholder:text-hoverColor transition-all"
         />
         {errorMsg && (
           <p className="text-red-400 text-center md:text-xs md:tracking-wide md:font-semibold md:uppercase">
@@ -158,7 +158,7 @@ export default function Form() {
           disabled={buttonHandler.disabled}
           className={`flex ${
             buttonHandler.disabled ? "bg-[#808080]" : "bg-[#00494F]"
-          } text-white rounded-md gap-2 border items-center justify-center p-4 md:hover:bg-[#039eab] transition-all`}
+          } text-white rounded-md gap-2 border items-center justify-center p-4 md:hover:bg-hoverColor transition-all`}
           onClick={submitData}
         >
           <p

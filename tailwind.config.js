@@ -14,6 +14,7 @@ module.exports = {
       },
       colors: {
         myBlue: "#00494F",
+        hoverColor: "#ffa306"
       },
       gridTemplateRows: {
         myRows: "repeat(3, auto)",

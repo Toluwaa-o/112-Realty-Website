@@ -8,7 +8,7 @@ import { useState } from "react";
 export default function Menu() {
   const [displayMenu, setDisplayMenu] = useState(false);
   return (
-    <span className="bg-white p-3 z-10 grid gap-4 md:hidden">
+    <span className="bg-[#F7FAFD] p-3 z-10 grid gap-4 md:hidden">
       {displayMenu ? (
         <AiOutlineClose
           className="ml-auto fill-myBlue"

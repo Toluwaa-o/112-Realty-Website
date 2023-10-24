@@ -21,7 +21,7 @@ export default function ListItem({ heading, details }) {
   return (
     <span key={heading} className="grid gap-3 border-b border-gray-300 pb-4" data-aos="fade-right">
       <span
-        className="flex items-center gap-2 md:hover:text-[#039eab] transition-all"
+        className="flex items-center gap-2 md:hover:text-hoverColor transition-all"
         role="button"
         onClick={() => setShowDetails(!showDetails)}
       >

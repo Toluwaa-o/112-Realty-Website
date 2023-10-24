@@ -14,13 +14,13 @@ export default function QuickLinks() {
       </h3>
       <nav>
         <ul className="flex flex-col gap-2">
-        <li className="md:hover:text-[#039eab] transition-all">
+        <li className="md:hover:text-hoverColor transition-all">
             <Link href="/about">About us</Link>
           </li>
-          <li className="md:hover:text-[#039eab] transition-all">
+          <li className="md:hover:text-hoverColor transition-all">
             <Link href="/services">Services</Link>
           </li>
-          <li className="md:hover:text-[#039eab] transition-all">
+          <li className="md:hover:text-hoverColor transition-all">
             <Link href="/contact-us">Contact us</Link>
           </li>
         </ul>

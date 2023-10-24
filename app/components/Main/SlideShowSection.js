@@ -18,13 +18,13 @@ export default function SlideShowSection() {
     <div
       className={`${roboto_condensed.className} w-[100vw] h-[100vh] text-white m-auto slideShowBg grid place-content-center p-6 text-center gap-4 rounded-bl-[-50%] relative`}
     >
-      <span className="h-[100%] absolute bg-gray-600 w-[100%] opacity-50"></span>
-      <h1 className="text-[4.2rem] custom_fadeIn z-20 uppercase leading-[1em]">112 Realty</h1>
+      <span className="h-[100%] absolute bg-[#214469] w-[100%] opacity-50"></span>
+      <h1 className="text-[4.2rem] custom_fadeIn z-20 uppercase leading-[1em] md:text-[9rem]">112 Realty</h1>
       <span className="flex custom_fadeIn flex-col gap-2 z-20">
         <h3 className="uppercase text-2xl items-center md:text-3xl md:font-semibold w-[60%] m-auto">
           Building Dreams, One Home at a Time
         </h3>
-        <span className="w-[25vw] h-[3px] m-auto bg-white"></span>
+        <span className="w-[25vw] h-[3px] m-auto bg-[#F7FAFD]"></span>
       </span>
       <p className="text-[1.1rem] custom_fadeIn font-light md:w-[60%] md:m-auto z-20">
         A UK property firm fostering prosperity with tailored strategies for
