@@ -38,8 +38,13 @@ export default function ContactUsParagraph() {
       </h4>
       <p data-aos="fade-right">
         For general enquiries, please get in touch with us through{" "}
-        <Link className='font-bold text-hoverColor' href="tel:+447832994230">+44 7832 994230</Link> or{" "}
-        <Link className='font-bold text-hoverColor' href="mailto:aisaac@112realty.com">aisaac@112realty.com</Link>
+        <Link className="text-hoverColor" href="tel:+447832994230">
+          +44 7832 994230
+        </Link>{" "}
+        or{" "}
+        <Link className="text-hoverColor" href="mailto:aisaac@112realty.com">
+          aisaac@112realty.com
+        </Link>
       </p>
     </div>
   );
