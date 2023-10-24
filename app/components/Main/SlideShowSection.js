@@ -19,7 +19,7 @@ export default function SlideShowSection() {
       className={`${roboto_condensed.className} w-[100vw] h-[100vh] text-white m-auto slideShowBg grid place-content-center p-6 text-center gap-4 rounded-bl-[-50%] relative`}
     >
       <span className="h-[100%] absolute bg-[#214469] w-[100%] opacity-50"></span>
-      <h1 className="text-[4.2rem] custom_fadeIn z-20 uppercase leading-[1em] md:text-[12rem]">112 Realty</h1>
+      <h1 className="text-[4.2rem] custom_fadeIn z-20 uppercase leading-[1em] md:text-[10rem] md:font-extrabold md:tracking-widest">112 Realty</h1>
       <span className="flex custom_fadeIn flex-col gap-2 z-20">
         <h3 className="uppercase text-2xl items-center md:text-3xl md:font-semibold w-[40%] m-auto">
           Building Dreams, One Home at a Time
