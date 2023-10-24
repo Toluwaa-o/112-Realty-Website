@@ -7,7 +7,7 @@ const roboto_condensed = Roboto_Condensed({
 
 export default function LogoSection() {
   return (
-    <span className="p-4 max-w-[85%] m-auto grid gap-4">
+    <span className="p-4 max-w-[85%] m-auto grid gap-4 items-start">
       <img
         src="/images/png/logo-no-background.png"
         alt="112 Realty Logo"

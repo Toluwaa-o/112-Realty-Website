@@ -10,7 +10,7 @@ const roboto_condensed = Roboto_Condensed({
 
 export default function Location() {
   return (
-    <span className="flex justify-between flex-col gap-8 md:flex-row">
+    <span className="flex justify-between flex-col gap-8 md:flex-row items-start">
       <span className="flex flex-col gap-5">
       <h3 className={`${roboto_condensed.className} uppercase text-2xl`}>
         Manchester
