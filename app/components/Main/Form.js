@@ -157,7 +157,7 @@ export default function Form() {
         <button
           disabled={buttonHandler.disabled}
           className={`flex ${
-            buttonHandler.disabled ? "bg-[#808080]" : "bg-[#00494F]"
+            buttonHandler.disabled ? "bg-[#808080]" : "bg-hoverColor"
           } text-white rounded-md gap-2 border items-center justify-center p-4 md:hover:bg-hoverColor transition-all`}
           onClick={submitData}
         >
