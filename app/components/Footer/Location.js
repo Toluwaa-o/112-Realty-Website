@@ -19,7 +19,7 @@ export default function Location() {
         <Link href="https://www.google.com/maps/place/146+Stevenson+Dr,+Moorside,+Oldham/@53.5668509,-2.0724573,17z/data=!3m1!4b1!4m5!3m4!1s0x487bb80d37d5ce75:0xa75b113af076c928!8m2!3d53.5668509!4d-2.0724573?entry=ttu">
           146 Stevenson drive,
           <br />
-          OL1 4RS Manchester
+          OL1 4RS Oldham Manchester
         </Link>
       </address>
       <span className="flex items-center gap-1 m-auto md:hover:text-hoverColor transition-all">
@@ -37,10 +37,10 @@ export default function Location() {
         LAGOS
       </h3>
       <address className="not-italic md:hover:text-hoverColor transition-all">
-        <Link href="https://www.google.com/maps/place/146+Stevenson+Dr,+Moorside,+Oldham/@53.5668509,-2.0724573,17z/data=!3m1!4b1!4m5!3m4!1s0x487bb80d37d5ce75:0xa75b113af076c928!8m2!3d53.5668509!4d-2.0724573?entry=ttu">
+        <Link href="https://www.google.com/maps/place/Iya-Eba+Restaurant+%26+Bar/@6.4472176,3.4046103,15z/data=!4m2!3m1!1s0x0:0x3f7825fc603f1176?sa=X&ved=2ahUKEwjIgsWqnJGCAxUHKcAKHbuDBvEQ_BJ6BAg4EAA&ved=2ahUKEwjIgsWqnJGCAxUHKcAKHbuDBvEQ_BJ6BAhBEAg">
           14 Berkley Street,
           <br />
-          Lagos Island
+          Lagos Island, Lagos State.
         </Link>
       </address>
       <span className="flex items-center gap-1 m-auto md:hover:text-hoverColor transition-all">
