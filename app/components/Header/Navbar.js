@@ -14,13 +14,13 @@ export default function Navbar({ handler }) {
 
   return (
     <nav
-      className={`${roboto_condensed.className} flex text-myBlue uppercase tracking-widest absolute md:relative md:top-0 bg-[#F7FAFD] left-0 right-0 top-[8vh] p-4 md:p-[unset] shadow-md md:shadow-none`}
+      className={`${roboto_condensed.className} flex text-myBlue uppercase tracking-widest absolute md:relative md:top-0 bg-[#F7FAFD] left-0 right-0 top-[8vh] p-4 md:p-0 shadow-md md:shadow-none`}
     >
       <ul className="flex flex-col gap-6 text-[1.1rem] md:text-[1rem] md:flex-row md:gap-10">
         <li
           className={`md:hidden ${
             pname === "/" ? "text-hoverColor" : "text-myBlue"
-          }`}
+          } md:h-[15vh] md:grid md:place-content-center md:border-b-4`}
         >
           <Link href="/" onClick={handler}>
             Homepage
@@ -28,8 +28,8 @@ export default function Navbar({ handler }) {
         </li>
         <li
           className={`hidden md:block md:hover:text-hoverColor transition-all ${
-            pname === "/" ? "text-hoverColor" : "text-myBlue"
-          }`}
+            pname === "/" ? "text-hoverColor md:border-hoverColor" : "text-myBlue md:border-transparent md:hover:border-hoverColor"
+          } md:h-[15vh] md:grid md:place-content-center md:border-b-[5px] transition-all`}
         >
           <Link href="/" onClick={handler}>
             Home
@@ -37,8 +37,8 @@ export default function Navbar({ handler }) {
         </li>
         <li
           className={`md:hover:text-hoverColor transition-all ${
-            pname === "/about" ? "text-hoverColor" : "text-myBlue"
-          }`}
+            pname === "/about" ? "text-hoverColor md:border-hoverColor" : "text-myBlue md:border-transparent md:hover:border-hoverColor"
+          } md:h-[15vh] md:grid md:place-content-center md:border-b-[5px] transition-all`}
         >
           <Link href="/about" onClick={handler}>
             About
@@ -46,8 +46,8 @@ export default function Navbar({ handler }) {
         </li>
         <li
           className={`md:hover:text-hoverColor transition-all ${
-            pname === "/resources" ? "text-hoverColor" : "text-myBlue"
-          }`}
+            pname === "/resources" ? "text-hoverColor md:border-hoverColor" : "text-myBlue md:border-transparent md:hover:border-hoverColor"
+          } md:h-[15vh] md:grid md:place-content-center md:border-b-[5px] transition-all`}
         >
           <Link href="/resources" onClick={handler}>
             Resources
@@ -55,8 +55,8 @@ export default function Navbar({ handler }) {
         </li>
         <li
           className={`md:hover:text-hoverColor transition-all ${
-            pname === "/services" ? "text-hoverColor" : "text-myBlue"
-          }`}
+            pname === "/services" ? "text-hoverColor md:border-hoverColor" : "text-myBlue md:border-transparent md:hover:border-hoverColor"
+          } md:h-[15vh] md:grid md:place-content-center md:border-b-[5px] transition-all`}
         >
           <Link href="/services" onClick={handler}>
             Services
@@ -64,8 +64,8 @@ export default function Navbar({ handler }) {
         </li>
         <li
           className={`md:hover:text-hoverColor transition-all ${
-            pname === "/contact-us" ? "text-hoverColor" : "text-myBlue"
-          }`}
+            pname === "/contact-us" ? "text-hoverColor md:border-hoverColor" : "text-myBlue md:border-transparent md:hover:border-hoverColor"
+          } md:h-[15vh] md:grid md:place-content-center md:border-b-[5px] transition-all`}
         >
           <Link href="/contact-us" onClick={handler}>
             Contact Us
