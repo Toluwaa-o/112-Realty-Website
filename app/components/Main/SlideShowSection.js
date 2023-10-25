@@ -21,7 +21,7 @@ export default function SlideShowSection() {
       <span className="h-[100%] absolute bg-[#214469] w-[100%] opacity-50"></span>
       <h1 className="text-[4.2rem] custom_fadeIn z-20 uppercase leading-[1em] md:text-[10rem] md:font-extrabold md:tracking-widest">112 Realty</h1>
       <span className="flex custom_fadeIn flex-col gap-2 z-20">
-        <h3 className="uppercase text-2xl items-center md:text-3xl md:font-semibold w-[40%] m-auto">
+        <h3 className="uppercase text-2xl items-center md:text-3xl md:font-semibold w-[65%] md:w-[40%] m-auto">
           Building Dreams, One Home at a Time
         </h3>
         <span className="w-[25vw] h-[3px] m-auto bg-[#F7FAFD]"></span>
