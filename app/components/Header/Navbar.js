@@ -41,7 +41,7 @@ export default function Navbar({ handler }) {
         <DropDown link={'about'} pname={pname} handler={handler} />
         <li
           className={`md:hover:text-hoverColor transition-all ${
-            pname === "/services"
+            pname === "/resources"
               ? "text-hoverColor md:border-hoverColor"
               : "text-myBlue md:border-transparent md:hover:border-hoverColor"
           } md:grid md:place-content-center md:border-b-[2px] md:pb-3 transition-all`}

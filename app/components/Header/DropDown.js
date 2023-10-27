@@ -14,6 +14,8 @@ export default function DropDown({ link, handler, pname }) {
           ? "md:border-hoverColor"
           : "md:border-transparent md:hover:border-hoverColor"
       } grid gap-4 md:place-content-center md:border-b-[2px] md:pb-3 transition-all md:relative`}
+      onMouseOver={() => setShow(true)}
+      onMouseLeave={() => setShow(false)}
     >
       <span
         className={`flex items-center gap-2 md:hover:text-hoverColor transition-all ${
@@ -23,11 +25,7 @@ export default function DropDown({ link, handler, pname }) {
         <Link href={`/${link}`} onClick={handler}>
           {link}
         </Link>
-        {show ? (
-          <IoIosArrowUp onClick={() => setShow(false)} />
-        ) : (
-          <IoIosArrowDown onClick={() => setShow(true)} />
-        )}
+        {show ? <IoIosArrowUp /> : <IoIosArrowDown />}
       </span>
       {show && (
         <ul className="pl-6 grid gap-4 md:absolute md:top-[100%] md:bg-[#F7FAFD] md:px-5 md:py-4 md:capitalize md:rounded-b-sm">
