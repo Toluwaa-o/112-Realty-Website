@@ -13,7 +13,7 @@ export default function DropDown({ link, handler, pname }) {
         pname === `/${link}`
           ? "md:border-hoverColor"
           : "md:border-transparent md:hover:border-hoverColor"
-      } md:h-[15vh] grid gap-4 md:place-content-center md:border-b-[5px] transition-all md:relative`}
+      } grid gap-4 md:place-content-center md:border-b-[2px] md:pb-3 transition-all md:relative`}
     >
       <span
         className={`flex items-center gap-2 md:hover:text-hoverColor transition-all ${

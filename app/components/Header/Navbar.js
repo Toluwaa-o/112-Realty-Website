@@ -17,11 +17,11 @@ export default function Navbar({ handler }) {
     <nav
       className={`${roboto_condensed.className} flex text-myBlue uppercase tracking-widest absolute md:relative md:top-0 bg-[#F7FAFD] left-0 right-0 top-[8vh] p-4 md:p-0 shadow-md md:shadow-none`}
     >
-      <ul className="flex flex-col gap-6 text-[1.1rem] md:text-[1rem] md:flex-row md:gap-10">
+      <ul className="flex flex-col gap-6 text-[1.1rem] md:text-[1rem] md:flex-row md:gap-10 md:p-4">
         <li
           className={`md:hidden ${
             pname === "/" ? "text-hoverColor" : "text-myBlue"
-          } md:h-[15vh] md:grid md:place-content-center md:border-b-4`}
+          } md:grid md:place-content-center md:border-b-4`}
         >
           <Link href="/" onClick={handler}>
             Homepage
@@ -32,7 +32,7 @@ export default function Navbar({ handler }) {
             pname === "/"
               ? "text-hoverColor md:border-hoverColor"
               : "text-myBlue md:border-transparent md:hover:border-hoverColor"
-          } md:h-[15vh] md:grid md:place-content-center md:border-b-[5px] transition-all`}
+          } md:grid md:place-content-center md:border-b-[2px] md:pb-3 transition-all`}
         >
           <Link href="/" onClick={handler}>
             Home
@@ -44,7 +44,7 @@ export default function Navbar({ handler }) {
             pname === "/services"
               ? "text-hoverColor md:border-hoverColor"
               : "text-myBlue md:border-transparent md:hover:border-hoverColor"
-          } md:h-[15vh] md:grid md:place-content-center md:border-b-[5px] transition-all`}
+          } md:grid md:place-content-center md:border-b-[2px] md:pb-3 transition-all`}
         >
           <Link href="/resources" onClick={handler}>
             Resources
@@ -56,7 +56,7 @@ export default function Navbar({ handler }) {
             pname === "/contact-us"
               ? "text-hoverColor md:border-hoverColor"
               : "text-myBlue md:border-transparent md:hover:border-hoverColor"
-          } md:h-[15vh] md:grid md:place-content-center md:border-b-[5px] transition-all`}
+          } md:grid md:place-content-center md:border-b-[2px] md:pb-3 transition-all`}
         >
           <Link href="/contact-us" onClick={handler}>
             Contact Us
