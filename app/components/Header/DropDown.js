@@ -5,7 +5,7 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { useState } from "react";
 
 export default function DropDown({ link, handler, pname }) {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
 
   return (
     <li
