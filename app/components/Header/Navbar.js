@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Roboto_Condensed, Roboto } from "next/font/google";
 import { usePathname } from "next/navigation";
+import DropDown from "./DropDown";
 
 const roboto_condensed = Roboto_Condensed({
   subsets: ["latin"],
@@ -28,43 +29,33 @@ export default function Navbar({ handler }) {
         </li>
         <li
           className={`hidden md:block md:hover:text-hoverColor transition-all ${
-            pname === "/" ? "text-hoverColor md:border-hoverColor" : "text-myBlue md:border-transparent md:hover:border-hoverColor"
+            pname === "/"
+              ? "text-hoverColor md:border-hoverColor"
+              : "text-myBlue md:border-transparent md:hover:border-hoverColor"
           } md:h-[15vh] md:grid md:place-content-center md:border-b-[5px] transition-all`}
         >
           <Link href="/" onClick={handler}>
             Home
           </Link>
         </li>
+        <DropDown link={'about'} pname={pname} handler={handler} />
         <li
           className={`md:hover:text-hoverColor transition-all ${
-            pname === "/about" ? "text-hoverColor md:border-hoverColor" : "text-myBlue md:border-transparent md:hover:border-hoverColor"
-          } md:h-[15vh] md:grid md:place-content-center md:border-b-[5px] transition-all`}
-        >
-          <Link href="/about" onClick={handler}>
-            About
-          </Link>
-        </li>
-        <li
-          className={`md:hover:text-hoverColor transition-all ${
-            pname === "/resources" ? "text-hoverColor md:border-hoverColor" : "text-myBlue md:border-transparent md:hover:border-hoverColor"
+            pname === "/services"
+              ? "text-hoverColor md:border-hoverColor"
+              : "text-myBlue md:border-transparent md:hover:border-hoverColor"
           } md:h-[15vh] md:grid md:place-content-center md:border-b-[5px] transition-all`}
         >
           <Link href="/resources" onClick={handler}>
             Resources
           </Link>
         </li>
+        <DropDown link={'services'} pname={pname} handler={handler} />
         <li
           className={`md:hover:text-hoverColor transition-all ${
-            pname === "/services" ? "text-hoverColor md:border-hoverColor" : "text-myBlue md:border-transparent md:hover:border-hoverColor"
-          } md:h-[15vh] md:grid md:place-content-center md:border-b-[5px] transition-all`}
-        >
-          <Link href="/services" onClick={handler}>
-            Services
-          </Link>
-        </li>
-        <li
-          className={`md:hover:text-hoverColor transition-all ${
-            pname === "/contact-us" ? "text-hoverColor md:border-hoverColor" : "text-myBlue md:border-transparent md:hover:border-hoverColor"
+            pname === "/contact-us"
+              ? "text-hoverColor md:border-hoverColor"
+              : "text-myBlue md:border-transparent md:hover:border-hoverColor"
           } md:h-[15vh] md:grid md:place-content-center md:border-b-[5px] transition-all`}
         >
           <Link href="/contact-us" onClick={handler}>
